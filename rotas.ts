@@ -283,7 +283,7 @@ export function getRotasPorAgente(params = <any>{}): Rota[] {
 
 export function getRotasDetalhadaPorAgente(params = <any>{}): DetalheRota[] {
     let codigoAgenteCampo = params.codigoAgenteCampo;
-    let municipio = params.municipio;
+    let municipio = params.codigoMunicipio;
     console.log('getRotasDetalhadaPorAgente ==> municipio = ', municipio);
 
     if (!municipio){

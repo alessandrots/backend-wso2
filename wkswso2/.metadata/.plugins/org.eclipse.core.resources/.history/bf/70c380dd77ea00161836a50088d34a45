@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/mapa" name="MapaRest" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/query/cod‌​igoAgenteCampo/codigoMunicipio‌​">
+        <inSequence>
+            <log description="Request Log" level="custom">
+                <property name="message" value="&quot;Teste com o mapa services node&quot;"/>
+                <property expression="get-property('uri.var.codigoAgenteCampo')" name="codigoAgenteCampo"/>
+                <property expression="get-property('uri.var.codigoMunicipio')" name="codigoMunicipio"/>
+            </log>
+            <send>
+                <endpoint key="TransporteFrutasEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <log level="full"/>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

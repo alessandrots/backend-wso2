@@ -34,7 +34,8 @@ app.get('/rest/rotas/detalhe/:codigoAgenteCampo', function(req, res, next) {
     responder(res, getDetalheRotaPorCodigo(req.params));
 });
 
-app.get('/rest/rotas/completa/:codigoAgenteCampo/:municipio', function(req, res, next) {
+//:uri.var.codigoAgenteCampo/:
+app.get('/rest/rotas/completa/:codigoAgenteCampo/:codigoMunicipio', function(req, res, next) {
     responder(res, getRotasDetalhadaPorAgente(req.params));
 });
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="TransporteFrutasEP" groupId="com.example.MapaServices.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/TransporteFrutasEP.xml</file>
+    </artifact>
+    <artifact name="MapaRest" groupId="com.example.MapaServices.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/MapaRest.xml</file>
+    </artifact>
+</artifacts>
