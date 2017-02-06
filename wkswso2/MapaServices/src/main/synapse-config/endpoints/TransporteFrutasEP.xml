@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoint name="TransporteFrutasEP" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="get" uri-template="http://localhost:8200/rest/rotas/completa/{uri.var.cod‌​igoAgenteCampo}/{uri.var.codigoMunicipio‌​}"/>
+    <http method="get" uri-template="http://localhost:8200/rest/rotas/completa/{uri.var.codigoAgenteCampo}/{uri.var.codigoMunicipio}"/>
 </endpoint>
